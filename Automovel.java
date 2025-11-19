@@ -84,13 +84,7 @@ public abstract class Automovel {
     public boolean estaDisponivel(){
         return disponivel;
     }
-    public void aplicarDesconto(double percentual) {
-        preco -= preco * (percentual / 100);
-        System.out.println("Desconto aplicado! Novo preço: R$" + preco);
-    }
-    public void revisao(){
-        System.out.printf(modelo + "passou por uma revisao completa!!");
-    }
-
+   
 }
+
 
