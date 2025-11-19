@@ -54,6 +54,7 @@
                             System.out.println("\n1 - Adicionar carro");
                             System.out.println("2 - Adicionar moto");
                             System.out.println("3 - Buscar automóvel por modelo");
+                            System.out.println("4 - Listar Clientes");
                             System.out.println("0 - Logout");
                             System.out.print("Escolha: ");
                             escolha = sc.nextInt();
@@ -75,6 +76,12 @@
                                     a.exibirInf();
                                 } catch (AutomovelException e) {
                                     System.out.println("❌ " + e.getMessage());
+                                }
+                            }
+                            else if (escolha == 4){
+                                System.out.println("Lista de clientes: ");
+                                for (Cliente c : loja.getClientes()) {
+                                    System.out.println(c);
                                 }
                             }
                         }
