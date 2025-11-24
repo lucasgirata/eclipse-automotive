@@ -137,7 +137,7 @@ public class Main {
                     }
                     break;
 
-                // NOVO: Case 4 para remover veículo
+                // Case 4 para remover veículo
                 case "4":
                     if (!usuarioLogado.podeAdicionarVeiculo()) { // Usamos a mesma checagem de permissão
                         JOptionPane.showMessageDialog(null,
@@ -154,7 +154,6 @@ public class Main {
                         if (loja.quantidade() < tamanhoInicial) {
                             JOptionPane.showMessageDialog(null, "Veículo com ID '" + idRemocao + "' removido com sucesso!");
                         } else {
-                            // Poderia ser mais robusto com buscarPorId, mas assim já resolve a remoção.
                             JOptionPane.showMessageDialog(null, "Veículo com ID '" + idRemocao + "' não foi encontrado (ou ID inválido).");
                         }
                     }
